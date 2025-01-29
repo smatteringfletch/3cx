@@ -21,7 +21,7 @@ def IP_Whitelist_3CX(input_file, output_file):
     with open(output_file, 'w') as json_file:
         json.dump(data, json_file, indent=4)
 
-IPs_To_Whitelist = 'CurrentIPsJD.txt'
+IPs_To_Whitelist = 'ips.txt'
 JSON_To_Upload = 'Whitelist_Upload.json'
 
 IP_Whitelist_3CX(IPs_To_Whitelist, JSON_To_Upload)
